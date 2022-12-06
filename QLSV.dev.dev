@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=0
+UnitCount=5
 
 [VersionInfo]
 Major=1
@@ -50,18 +50,8 @@ ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
 
-[Unit1]
-FileName=Date.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit2]
-FileName=Date.h
+FileName=D:\qlsv\sinhvien.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=main.c
+FileName=D:\qlsv\main.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -81,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=sinhvien.c
+FileName=D:\qlsv\Date.h
 Folder=
 Compile=1
 Link=1
@@ -90,8 +80,18 @@ OverrideBuildCmd=0
 BuildCmd=
 CompileCpp=0
 
+[Unit1]
+FileName=D:\qlsv\sinhvien.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
 [Unit5]
-FileName=sinhvien.h
+FileName=D:\qlsv\Date.c
 CompileCpp=0
 Folder=
 Compile=1
