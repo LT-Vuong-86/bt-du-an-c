@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "sinhvien.h"
@@ -11,14 +10,17 @@ int main(int argc, char *argv[]) {
 	Hoc_vien ds[100];
 	do {
 		system("cls");
-		printf("\n-------MENU--------");		
+		printf("\n-----MENU-----");		
 		printf("\n 1. Nhap thong tin hoc vien");
 		printf("\n 2. Hien thi thong tin hoc vien");
 		printf("\n 3. Tim thong tin hoc vien theo ma hoc vien");
 		printf("\n 4. Ghi thong tin hoc vien vao tep");
 		printf("\n 5. Doc thong tin hoc vien tu tep");
+		printf("\n 6. sap xep theo dtb");
+		printf("\n 7. chon tinhDTB");
+		printf("\n 8. sap xep theo ten");
 		printf("\n 0. Thoat");
-		printf("\n-------------------");
+		printf("\n--------------");
 		printf("\n Ban hay chon mot cong viec: ");scanf("%d",&chon);
 		switch (chon)
 		{
@@ -51,9 +53,32 @@ int main(int argc, char *argv[]) {
 				printf("\n5. Doc danh sach hoc vien tu tep\n");
 				docdsHv(ds,&n);
 				getch();
-				break;	
+//				break;
+//				case 6: 
+//				system("cls");
+//				printf("\n5. sap xep theo dtb\n");
+//				sapxepTheoDTB(ds,n);
+//				getch();
+//				break;	
+				
+			 case 7:
+                    printf("\nBan da chon sap xep theo DTB  SV!\n");
+                    sapxepTheoDTB(ds, n);
+                    indsHv(ds, n);
+                    
+                printf("\nBam phim bat ky de tiep tuc!");
+                getch();
+                break;
+         case 8:
+                    printf("\nBan da chon sap xep theo ten SV!\n");
+                    Sapxeptheoten(ds, n);
+                    indsHv(ds, n);
+                printf("\nBam phim bat ky de tiep tuc!");
+                getch();
+                break;
 		}
 	} while (chon!=0);
-	return 0;
 	
+	
+	return 0;
 }
