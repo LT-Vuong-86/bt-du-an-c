@@ -154,7 +154,7 @@ void docdsHv(Hoc_vien *a,int *n)
 	 	printf("trung binh");
 	 }
 	 else{
-	 	printf("yeu");
+	 	printf("yeu\n");
 	 }
  }
  void sapxepTheoDTB(Hoc_vien *a, int n) {
@@ -172,6 +172,10 @@ void docdsHv(Hoc_vien *a,int *n)
     }
 }
  void xeploaiN(Hoc_vien *a, int n){
- 	
+ 	int i;
+ 	 for( i= 0;i < n;i++){
+ 	 	printf("sinh vien thu %d",i+1);
+	  xeploai(a[i]);
+	  }
  }
 

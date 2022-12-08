@@ -17,9 +17,9 @@ int main(int argc, char *argv[]) {
 		printf("\n 4. Ghi thong tin hoc vien vao tep");
 		printf("\n 5. Doc thong tin hoc vien tu tep");
 		printf("\n 6. sap xep theo dtb");
-		printf("\n 7. chon tinhDTB");
+		printf("\n 7. chon sap xep theo DTB");
 		printf("\n 8. sap xep theo ten");
-		printf("\n 0. Thoat");
+		printf("\n 9. xep loai sinh vien");
 		printf("\n--------------");
 		printf("\n Ban hay chon mot cong viec: ");scanf("%d",&chon);
 		switch (chon)
@@ -72,6 +72,13 @@ int main(int argc, char *argv[]) {
          case 8:
                     printf("\nBan da chon sap xep theo ten SV!\n");
                     Sapxeptheoten(ds, n);
+                    indsHv(ds, n);
+                printf("\nBam phim bat ky de tiep tuc!");
+                getch();
+                break;
+            case 9:
+                    printf("\nBan da chon xep loai SV!\n");
+                    xeploaiN(ds, n);
                     indsHv(ds, n);
                 printf("\nBam phim bat ky de tiep tuc!");
                 getch();
